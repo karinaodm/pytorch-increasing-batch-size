@@ -162,7 +162,7 @@ def train(train_loader, model, criterion, optimizer, args, run_segment):
                 scaler.update()
             else:
                 optimizer.step()  
-                optimizer.zero_grad()
+            optimizer.zero_grad()
 
 
 def validate(val_loader, model, args):
